@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  
+ 
+  
+  
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>LoginCodeServlet</servlet-class>
+  </servlet>
+ 
+    <servlet>
+    <servlet-name>AccountCreation</servlet-name>
+    <servlet-class>AccountCreationServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>Transaction</servlet-name>
+    <servlet-class>TransactionServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>Statement</servlet-name>
+    <servlet-class>StatementServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <!-- Mapping login_servlet to AdminServlet class -->
+
+  <servlet-mapping>
+    <servlet-name>AccountCreation</servlet-name>
+    <url-pattern>/AccountServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>Transaction</servlet-name>
+    <url-pattern>/TServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>Statement</servlet-name>
+    <url-pattern>/SServlet</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  <welcome-file-list>
+    <welcome-file>loginPage.jsp</welcome-file>
+  </welcome-file-list> 
+</web-app>
